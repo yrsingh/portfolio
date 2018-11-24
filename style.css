@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo:500,700');
+body {
+    background-color: #111023/*181F33*/;
+    color: #FFFCDB;
+}
+footer {
+    margin-bottom: 0;
+    background-color: #122339;
+    padding: 2rem;
+}
+hr {
+    border-color: beige;
+}
+.title {
+    color: #FFFCF4;
+    font-weight: bold;
+    font-family: "Archivo", sans-serif;
+    font-size: 3rem;
+    display: inline-block;
+}
+
+/* landing page */
+.main-jumbotron {
+    background-image: url("Images/landing-jumbotron-2.jpg");
+    background-size: cover;
+    height: 35rem;
+}
+
+/* about me page */
+.carousel {
+    margin-bottom: 2rem;
+}
+.about-me-description {
+    font-size: 1.15rem;
+    font-family: "Roboto Mono", sans-serif;
+    /*letter-spacing: 0.5px;*/
+}
+
+/* resume page */
+.resume {
+    margin-bottom: 1rem;
+    padding: 2rem;
+}
+.resume-section {
+    margin: 2rem;
+}
+.resume-section-info {
+    background-color: #008CAA;
+    box-shadow: 3px 3px beige;
+}
+.resume-section-info p, li {
+    color: beige;
+}
+
+/* projects page */
+.projects-jumbotron {
+    background-image: url("Images/projects-jumbotron-3.jpg");
+    background-size: cover;
+    height: 35rem;
+}
+.project {
+    padding: 3rem 2rem;
+    margin-bottom: 3rem;
+    border-top: 2px solid beige;
+    border-bottom: 2px solid beige;
+}
+/* contact me page */
+
+/* animations */
+.typing-effect {
+    white-space: nowrap;
+    border-right: 0.15em solid transparent;
+    margin: 0 auto;
+    overflow: hidden;
+    animation: 
+        typing 3.5s steps(30, end) forwards,
+        blinking-cursor .5s step-end 6.5;
+    animation-delay: 1s;
+    width: 0;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blinking-cursor {
+  from, to { border-color: transparent }
+  50% { border-color: white }
+}
