@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Archivo:500,700');
 body {
-    background-color: #111023/*181F33*/;
+    background-color: /*#111023*/#1B2535;
     color: #FFFCDB;
 }
 footer {
     margin-bottom: 0;
-    background-color: #122339;
+    background-color: #233D4A;
     padding: 2rem;
 }
 hr {
@@ -23,7 +23,7 @@ hr {
 .main-jumbotron {
     background-image: url("Images/landing-jumbotron-2.jpg");
     background-size: cover;
-    height: 35rem;
+    height: 40rem;
 }
 
 /* about me page */
@@ -37,6 +37,11 @@ hr {
 }
 
 /* resume page */
+.resume-jumbotron {
+    background-image: url('Images/resume-jumbotron.jpg');
+    background-size: cover;
+    height: 23rem;
+}
 .resume {
     margin-bottom: 1rem;
     padding: 2rem;
@@ -45,7 +50,7 @@ hr {
     margin: 2rem;
 }
 .resume-section-info {
-    background-color: #008CAA;
+    background-color: #479A9C;
     box-shadow: 3px 3px beige;
 }
 .resume-section-info p, li {
@@ -65,7 +70,11 @@ hr {
     border-bottom: 2px solid beige;
 }
 /* contact me page */
-
+.about-me-jumbotron {
+    background-image: url('Images/contact-me-jumbotron-2.jpg');
+    background-size: cover;
+    height: 25rem;
+}
 /* animations */
 .typing-effect {
     white-space: nowrap;

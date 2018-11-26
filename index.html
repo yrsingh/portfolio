@@ -21,15 +21,22 @@
     <section class="jumbotron main-jumbotron d-flex">
         <div class="container align-self-center">
             <div class="text-center">
-                <h1 class="title typing-effect" style="max-width:34ch;">Yash Raj Singh's Engineering Portfolio</h1>
+                <!-- width needs to be changed to make the typing cursor stop at
+                    the right area just at the edge of the text-->
+                <h1 class="title typing-effect" 
+                    style="max-width:40ch; letter-spacing: 1.5px;">
+                    Yash Raj Singh's Engineering Portfolio
+                </h1>
             </div>
         </div>
     </section>
     
     <section class="main">
+        <!-- contains quick links to the other pages of this website-->
         <div class="container">
             <div class="row">
                 <div class="col-4 text-center">
+                    <!-- rounded circle changes the border-radius to 100%-->
                     <img class="rounded-circle" src="Images/my-img.jpg" width="150px">
                     <h2>About Me</h2>
                     <p>Hi, my name is Yash Raj Singh and I am sophomore at 
@@ -56,6 +63,7 @@
         </div><br>
         <div class="container">
             <hr>
+            <!-- hr to separate the different sections -->
             <div class="row">
                 <div class="col-md-7 align-self-center">
                     <h2>Game Development</h2>
@@ -121,10 +129,11 @@
             </div>
         </div>
     </section><br>
-
+    <!-- spanning with bootstrap gives more flexibility with the height than if
+        used jumbotron-->
     <footer class="col-md-12">
         <div class="container">
-            <a><img src="Images/gmail-icon.png" width="50px"></a>
+            <a href="Singh_ContactMe.html"><img src="Images/gmail-icon.png" width="50px"></a>
             <img src="Images/dhslogo.png" class="float-right" width="50px">
         </div>
     </footer>
