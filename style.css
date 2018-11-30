@@ -22,7 +22,7 @@ hr {
 }
 
 /* Checks for the screen size and applies the new css if it is true */
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
     /* Need to use !important to make sure the other rules 
     are overruled */
     .typing-effect {
@@ -35,7 +35,7 @@ hr {
         display: none;
     }
 }
-@media (min-width: 900px) and (max-width: 1200px){
+@media only screen and (min-width: 900px) and (max-width: 1200px){
     /* Need to use !important to make sure the other rules 
     are overruled */
     .title {
