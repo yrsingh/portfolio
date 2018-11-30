@@ -1,6 +1,8 @@
+/* font */
 @import url('https://fonts.googleapis.com/css?family=Archivo:500,700');
+
 body {
-    background-color: /*#111023*/#1B2535;
+    background-color: #1B2535;
     color: #FFFCDB;
 }
 footer {
@@ -19,6 +21,31 @@ hr {
     display: inline-block;
 }
 
+/* Checks for the screen size and applies the new css if it is true */
+@media (max-width: 900px) {
+    /* Need to use !important to make sure the other rules 
+    are overruled */
+    .typing-effect {
+        white-space: normal !important;
+        overflow: visible !important;
+        animation: none !important;
+        width: 100% !important;
+    }
+    #Space_Journey_Game {
+        display: none;
+    }
+}
+@media (min-width: 900px) and (max-width: 1200px){
+    /* Need to use !important to make sure the other rules 
+    are overruled */
+    .title {
+        font-size: 2.4rem !important;
+    }
+    #Space_Journey_Game {
+        display: none;
+    }
+}
+
 /* landing page */
 .main-jumbotron {
     background-image: url("Images/landing-jumbotron-2.jpg");
@@ -33,7 +60,6 @@ hr {
 .about-me-description {
     font-size: 1.15rem;
     font-family: "Roboto Mono", sans-serif;
-    /*letter-spacing: 0.5px;*/
 }
 
 /* resume page */
@@ -52,6 +78,7 @@ hr {
 .resume-section-info {
     background-color: #479A9C;
     box-shadow: 3px 3px beige;
+    padding-top: 0.5rem;
 }
 .resume-section-info p, li {
     color: beige;
@@ -64,10 +91,17 @@ hr {
     height: 35rem;
 }
 .project {
-    padding: 3rem 2rem;
+    padding: 3.5rem 3.5rem;
     margin-bottom: 3rem;
-    border-top: 2px solid beige;
-    border-bottom: 2px solid beige;
+    background-color: #2A3952;
+    box-shadow: 2px 2px teal;
+}
+.Projects_game_start_btn {
+    z-index:1; 
+    padding: 1.5rem;
+    width: 10rem;
+    height: 5rem;
+    font-size: 1.5rem;
 }
 /* contact me page */
 .about-me-jumbotron {
@@ -80,18 +114,24 @@ hr {
     white-space: nowrap;
     border-right: 0.15em solid transparent;
     margin: 0 auto;
+    /* only displays what is on the line */
     overflow: hidden;
+    /* steps breaks the animation into 30 sections so it looks like typing */
     animation: 
         typing 3.5s steps(30, end) forwards,
         blinking-cursor .5s step-end 6.5;
     animation-delay: 1s;
     width: 0;
 }
+
+/* two different animations, for typing and the blinking cursor */
 @keyframes typing {
+    /*Slowly increases the width */
   from { width: 0 }
   to { width: 100% }
 }
 @keyframes blinking-cursor {
+    /* changes color from transparent to white */
   from, to { border-color: transparent }
   50% { border-color: white }
 }
