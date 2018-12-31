@@ -5,31 +5,54 @@
     <title>Resume</title>
     <link href="bootstrap-4.1.2-dist/css/bootstrap.css" rel="stylesheet" type="text/css" />
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-<body>
-    <header class="container">
-        <nav class="nav nav-fill nav-pills">
-            <a href="index.html" class="nav-item nav-link">Home</a>
-            <a href="Singh_AboutMe.html" class="nav-item nav-link">About Me</a>
-            <a href="Singh_Resume.html" class="nav-item nav-link active">Resume</a>
-            <a href="Singh_Projects.html" class="nav-item nav-link">Projects</a>
-            <a href="Singh_ContactMe.html" class="nav-item nav-link">Contact Me</a>
-        </nav>
-    </header>
-    <section class="jumbotron resume-jumbotron d-flex align-items-center">
+
+<body data-aos="fade-in" data-aos-duration="1000" class="text-light bg-dark" style="background-color: #8597B2;">
+    
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <a class="navbar-brand h1 mb-0" style="color: white">Yash Raj Singh</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#resumeNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="resumeNav" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Singh_AboutMe.html" class="nav-link">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Singh_Resume.html" class="nav-link active">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Singh_Projects.html" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Singh_ContactMe.html" class="nav-link">Contact Me</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="jumbotron resume-jumbotron row align-items-center bg-dark">
         <div class="container text-center">
-            <h1 class="title typing-effect" style="max-width: 10.5ch;">My Resume</h1>
+            <h1 class="display-4 text-white">Resume</h1>
         </div>
     </section>
-    <section class="resume container" width="100%">
+
+    <section class="resume container" width="100%" style="background-color: #454D59">
         <div class="row resume-section">
             <!-- two columns, one for the header and the other for the content -->
             <div class="col-md-4">
                 <h1>Yash Raj Singh</h1>
             </div>
             <div class="col-md-8 resume-section-info">
+                <hr>
                 <h6>Yash Raj Singh<br>yashraj.singh2213@gmail.com</h6>
+                <hr>
             </div>
         </div>
         <div class="row resume-section">
@@ -37,9 +60,9 @@
                 <h3>Objective</h3>
             </div>
             <div class="col-md-8 resume-section-info">
-                <p>To obtain a full time position in the IT Industry with the 
-                intent of becoming a Computer Scientist.
+                <p>To obtain a full time position in the IT Industry with the intent of becoming a Computer Scientist.
                 </p>
+                <hr>
             </div>
         </div>
         <div class="row resume-section">
@@ -52,11 +75,11 @@
                 <ul>
                     <li>Currently a Sophomore</li>
                     <li>Cumulative Weighted GPA: 4.13</li>
-                    <li>Advanced English 10, Trig/PreCalculus, Spanish 3, 
-                    AP European History</li>
+                    <li>Advanced English 10, Trig/PreCalculus, Spanish 3, AP European History</li>
                     <li>Principal's Honor Roll - 2 Semester</li>
                     <li>Dublin High Swimmer - 1 Season</li>
                 </ul>
+                <hr>
             </div>
         </div>
         <div class="row resume-section">
@@ -68,11 +91,11 @@
                 <h6>June 2017 - August 2017, Dublin CA</h6>
                 <p>Learnt to do different jobs:</p>
                 <ul>
-                    <li>Worked with assisting and tutoring students with Math 
-                    and English</li>
+                    <li>Worked with assisting and tutoring students with Math and English</li>
                     <li>Grading a large amount of work</li>
                     <li>Helping students get through their work</li>
                 </ul>
+                <hr>
             </div>
         </div>
         <div class="row resume-section">
@@ -87,6 +110,7 @@
                     <li>Northern California Cricket Association - 2 years</li>
                     <li>Classical Guitar - 2 years</li>
                 </ul>
+                <hr>
             </div>
         </div>
         <div class="row resume-section">
@@ -94,15 +118,16 @@
                 <h3>Skills</h3>
             </div>
             <div class="col-md-8 resume-section-info">
-                    <h4>Knowledge and Experience</h4>
-                    <ul>
-                        <li>Lingual Skills: Intermediate in Spanish, Fluent in 
-                        Hindi</li>
-                        <li>Computer programming Languages: Javascript, CSS, HTML, 
-                        Java</li>
-                        <li>Music Composition</li>
-                        <li>Game Development, Web Page Creation and Maintenance</li>
-                    </ul>
+                <h4>Knowledge and Experience</h4>
+                <ul>
+                    <li>Lingual Skills: Intermediate in Spanish, Fluent in Hindi
+                    </li>
+                    <li>Computer programming Languages: Javascript, CSS, HTML, Java
+                    </li>
+                    <li>Music Composition</li>
+                    <li>Game Development, Web Page Creation and Maintenance</li>
+                </ul>
+                <hr>
             </div>
         </div>
         <div class="row resume-section">
@@ -113,18 +138,33 @@
                 <h4>My Interests</h4>
                 <ul>
                     <li>Classical guitar</li>
-                    <li>Designing and Programming Games using different programming 
-                    languages</li>
+                    <li>Designing and Programming Games using different programming languages
+                    </li>
                 </ul>
+                <hr>
             </div>
         </div>
     </section>
-    <footer class="col-md-12">
-        <div class="container">
-            <a href="Singh_ContactMe.html"><img src="Images/gmail-icon.png" width="50px"></a>
-            <img src="Images/dhslogo.png" class="float-right" width="50px">
+    <footer class="container mb-3">
+        <hr>
+            <center>
+                <h6 style="font-size: 14px;">
+                    <a href="index.html">Yash Raj Singh</a> 
+                    - Dublin, California - Sophomore -
+                    <a href="Singh_ContactMe.html">Contact Me</a>
+                </h6>
+            </center>
+        </div>
         </div>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="bootstrap-4.1.2-dist/js/bootstrap.min.js"></script>    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init({ once: true });
+    </script>
 </body>
 
 </html>

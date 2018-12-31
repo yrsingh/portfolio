@@ -5,36 +5,64 @@
     <title>Contact Me</title>
     <link href="bootstrap-4.1.2-dist/css/bootstrap.css" rel="stylesheet" type="text/css" />
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-<body>
-    <header class="container">
-        <nav class="nav nav-fill nav-pills">
-            <a href="index.html" class="nav-item nav-link">Home</a>
-            <a href="Singh_AboutMe.html" class="nav-item nav-link">About Me</a>
-            <a href="Singh_Resume.html" class="nav-item nav-link">Resume</a>
-            <a href="Singh_Projects.html" class="nav-item nav-link">Projects</a>
-            <a href="Singh_ContactMe.html" class="nav-item nav-link active">Contact Me</a>
-        </nav>
-    </header>
-    <section class="jumbotron about-me-jumbotron d-flex align-items-center">
+<body data-aos="fade-in" data-aos-duration="1000" class="text-light bg-dark">
+
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <a class="navbar-brand h1 mb-0 text-white">Yash Raj Singh</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#contactPageNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="contactPageNav" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Singh_AboutMe.html" class="nav-link">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Singh_Resume.html" class="nav-link">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Singh_Projects.html" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Singh_ContactMe.html" class="nav-link active">Contact Me</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="jumbotron contact-me-jumbotron d-flex align-items-center bg-dark">
         <div class="container text-center">
-            <h1 class="typing-effect title" style="max-width: 16ch;">Lets Get In Touch!</h1>
+            <h1 class="display-4">Leave A Message!</h1>
         </div>
     </section>
-    <section class="main">
-        <div class="container">
-            <!-- embeds the google form in the website -->
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeVsrdduqd-f9gxd63HdLkiY4tien6Rdx7zK04Uoejl2Dt_hg/viewform?embedded=true" 
-                width="100%" height="720px" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-        </div>
+    <section class="main container">
+        <iframe class="w-100" src="https://docs.google.com/forms/d/e/1FAIpQLSeVsrdduqd-f9gxd63HdLkiY4tien6Rdx7zK04Uoejl2Dt_hg/viewform?embedded=true" width="640" height="700" frameborder="0" >Loading...</iframe>
     </section>
-    <footer class="col-md-12">
-        <div class="container">
-            <a href="Singh_ContactMe.html"><img src="Images/gmail-icon.png" width="50px"></a>
-            <img src="Images/dhslogo.png" class="float-right" width="50px">
+
+    <footer class="container mb-3">
+        <hr>
+        <center>
+            <h6 style="font-size: 14px;">
+                <a href="index.html">Yash Raj Singh</a> - Dublin, California - Sophomore -
+                <a href="Singh_ContactMe.html">Contact Me</a>
+            </h6>
+        </center>
+        </div>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="bootstrap-4.1.2-dist/js/bootstrap.js"></script>
+    <script>
+        AOS.init({ once: true });
+    </script>
 </body>
 
 </html>
