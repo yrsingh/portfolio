@@ -97,7 +97,6 @@ nav {
 /* resume page */
 
 .resume-jumbotron {
-    /*background-image: url('Images/resume-jumbotron.jpg');*/
     background-size: cover;
     height: 20rem;
 }
@@ -114,8 +113,6 @@ nav {
 /* projects page */
 
 .projects-jumbotron {
-    /*background-image: url("Images/projects-jumbotron-3.jpg");
-    background-size: cover;*/
     height: 20rem;
 }
 
@@ -134,7 +131,5 @@ nav {
 /* contact me page */
 
 .contact-me-jumbotron {
-    /*background-image: url('Images/contact-me-jumbotron-2.jpg');
-    background-size: cover;*/
     height: 20rem;
 }
