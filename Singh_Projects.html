@@ -28,7 +28,7 @@
                     <a href="Singh_AboutMe.html" class="nav-link">About Me</a>
                 </li>
                 <li class="nav-item">
-                    <a href="Singh_Resume.html" class="nav-link">Resume</a>
+                    <a target="_blank" href="https://drive.google.com/file/d/1kqr-4jeATPWv3S7KKD0HkNcEgVrpQKpA/view?usp=sharing" class="nav-link">Resume</a>
                 </li>
                 <li class="nav-item">
                     <a href="Singh_Projects.html" class="nav-link active">Projects</a>
@@ -57,6 +57,9 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link" id="prj4-tab" data-toggle="tab" href="#Projects_Text_Adventure" role="tab" aria-controls="Projects_Text_Adventure" aria-selected="false">Text Adventure</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="prj5-tab" data-toggle="tab" href="#Projects_AHES" role="tab" aria-controls="Projects_AHES" aria-selected="false">Efficiency System</a>
             </li>
         </ul>
         <div class="tab-content" id="myTabContent">
@@ -188,7 +191,43 @@
                     </div>
                     <hr><br>
                 </div>
-                <iframe height="500px" width="100%" src="https://repl.it/@yashsingh/Text-Adventure?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+                <!--iframe height="500px" width="100%" src="https://repl.it/@yashsingh/Text-Adventure?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe-->
+            </div>
+            <div class="tab-pane text-light p-5 fade" id="Projects_AHES" role="tabpanel" aria-labelledby="prj1-tab">
+                <div class="container project" id="Projects_AHES">
+                    <div class="row">
+                        <div class="col-4"><img class="img-fluid w-100" src="https://drive.google.com/uc?export=view&id=1QfKXJVZBF4X4CkxWoiJy62GZhs0VYzuP"></div>
+                        <div class="col-4"><img class="img-fluid h-100" src="https://drive.google.com/uc?export=view&id=1MdfDO0kzsYNqZCzWHHMpnQc1A3Zu9SDe"></div>
+                        <div class="col-4"><img class="img-fluid w-100" src="https://drive.google.com/uc?export=view&id=18xC1sya6D_sMODfrByt2pDHbygCt1o9V"></div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h2>P127: Automated Home Efficiency System</h2>
+                            <h4 class="text-muted">Digital Electronics</h4>
+                            <h4 class="text-muted">October 21, 2020</h4>
+                            <a target="blank" href="https://docs.google.com/document/d/18GUSwcvddiZ3Vuu59KuIcqlXNPh_DcnLcwRSDyhQvIk/edit?usp=sharing">
+                        Read the Documentation</a>
+                        </div>
+                        <div class="col-md-9">
+                            <p>This project was designed to test the skills we learned in our Digital Electronics Class. The goals of this
+                                project was to construct a machine of any nature, containing 3 inputs and one output. The machine had to use
+                                combinational logic, using operaters such as the AND, OR, and Inverter gates that were provided. The circuit
+                                also had to be breadboarded. <br><br>
+                                
+                                I decided to create an automated home effiency system, the job of which would be to control the lights and 
+                                temperature in the house automatically, through the manipulation of multiple sensors. In completing the design
+                                process, I defined the inputs and outputs, made the truth tables, and created a simulated circuit using<a target="blank" href="https://www.ni.com/en-us/shop/electronic-test-instrumentation/application-software-for-electronic-test-and-instrumentation-category/what-is-multisim.html">
+                                Multisim</a>. After testing that the Multisim circuit was working as expected by verifying its output values with 
+                                the truth table, I breadboarded the circuit, using ICs (Integrated Circuits) that had multiple gates inside them.
+                                Though the inputs and outputs were defined to be of binary nature, they were simply placeholders for the real sensors
+                                which would replace them. Since the focus of this project was to manipulate the inputs instead of creating them, 
+                                switches were used for the inputs in order to simplify the design process.
+                            </p>
+                        </div>
+                    </div>
+                    <hr><br>
+                </div>
             </div>
         </div>
 
@@ -197,7 +236,7 @@
         <hr>
         <center>
             <h6 style="font-size: 14px;">
-                <a href="index.html">Yash Raj Singh</a> - Dublin, California - Sophomore -
+                <a href="index.html">Yash Raj Singh</a> - Senior -
                 <a href="Singh_ContactMe.html">Contact Me</a>
             </h6>
         </center>
@@ -224,6 +263,10 @@
             $(this).tab('show');
         });
         $('#myTab li:nth-child(3) a').on('click', function(e) {
+            e.preventDefault();
+            $(this).tab('show');
+        });
+        $('#myTab li:nth-child(4) a').on('click', function(e) {
             e.preventDefault();
             $(this).tab('show');
         });
