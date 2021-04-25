@@ -61,6 +61,9 @@
             <li class="nav-item">
                 <a class="nav-link" id="prj5-tab" data-toggle="tab" href="#Projects_AHES" role="tab" aria-controls="Projects_AHES" aria-selected="false">Efficiency System</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" id="prj6-tab" data-toggle="tab" href="#Projects_Scrolling_Display" role="tab" aria-controls="Projects_Scrolling_Display" aria-selected="false">Scrolling Display</a>
+            </li>
         </ul>
         <div class="tab-content" id="myTabContent">
             <div class="tab-pane text-light p-5 fade show active" id="Projects_Scratch_Project" role="tabpanel" aria-labelledby="prj1-tab">
@@ -193,7 +196,7 @@
                 </div>
                 <!--iframe height="500px" width="100%" src="https://repl.it/@yashsingh/Text-Adventure?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe-->
             </div>
-            <div class="tab-pane text-light p-5 fade" id="Projects_AHES" role="tabpanel" aria-labelledby="prj1-tab">
+            <div class="tab-pane text-light p-5 fade" id="Projects_AHES" role="tabpanel" aria-labelledby="prj5-tab">
                 <div class="container project" id="Projects_AHES">
                     <div class="row">
                         <div class="col-4"><img class="img-fluid w-100" src="https://drive.google.com/uc?export=view&id=1QfKXJVZBF4X4CkxWoiJy62GZhs0VYzuP"></div>
@@ -223,6 +226,45 @@
                                 Though the inputs and outputs were defined to be of binary nature, they were simply placeholders for the real sensors
                                 which would replace them. Since the focus of this project was to manipulate the inputs instead of creating them, 
                                 switches were used for the inputs in order to simplify the design process.
+                            </p>
+                        </div>
+                    </div>
+                    <hr><br>
+                </div>
+            </div>
+            <div class="tab-pane text-light p-5 fade" id="Projects_Scrolling_Display" role="tabpanel" aria-labelledby="prj6-tab">
+                <div class="container project" id="Projects_AHES">
+                    <div class="row">
+                        <div class="col-4"><img class="img-fluid w-100" src="https://drive.google.com/uc?export=view&id=1OKsUevXHtjLi4n3VTLQWDtiGghY-vY40"></div>
+                        <div class="col-4"><img class="img-fluid h-100" src="https://drive.google.com/uc?export=view&id=1K2_nDbICWFb4BIEFZaI09o6HbPz36exx"></div>
+                        <div class="col-4"><img class="img-fluid w-100" src="https://drive.google.com/uc?export=view&id=1cr7DtcvxsFrkmxI5VBkj8svg-nLq2B3_"></div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h2>Scrolling Display</h2>
+                            <h4 class="text-muted">Digital Electronics</h4>
+                            <h4 class="text-muted">March 13, 2021</h4>
+                            <a target="blank" href="https://docs.google.com/document/d/190LPe2PgbO-Sqv-i_wEKlb4F6_BuV0mgFhm1p9xdR1E/edit?usp=sharing">
+                        Read the Documentation</a>
+                        </div>
+                        <div class="col-md-9">
+                            <p>This project was designed to test the skills we learned in our Digital Electronics Class. The goals of this
+                                project was to construct a machine of any nature, containing four inputs and five outputs. The machine had to
+                                have a total of at least sixteen staets, and be controlled by a digital clock component that cycled through the
+                                states automatically. This project utilized the Cmod S6, a programmable logic device to be used to program the circuit,
+                                which also had to be breadboarded. <br><br>
+                                
+                                I decided to create a scrolling display, comprised of four different <a target="blank" href="https://en.wikipedia.org/wiki/Seven-segment_display">
+                                seven segment displays</a> that switched states such that the letters shown would be "scrolling" across from right to left.
+                                In completing the design process, I defined the inputs and outputs, and created truth tables for each segment on the four 
+                                displays. I then used <a target="blank" href="https://www.ni.com/en-us/shop/electronic-test-instrumentation/application-software-for-electronic-test-and-instrumentation-category/what-is-multisim.html">
+                                Multisim</a>. in order to create a simulated circuit of the scrolling display, which can be found in the documentation.
+                                After testing that the Multisim circuit was working as expected by verifying its outputs values with the truth table, I 
+                                breadboarded the circuit. In this project, the Multisim simulation was compiled into code, which was run by the Cmod S6,
+                                so the only breadboarding in this project involved those defining the output displays. Using the internal clock component of 
+                                the Cmod S6, I was able to create a display able to show any phrase (in my case, "live, laugh, love") by scrolling the 
+                                characters from right to left at a consistent speed.
                             </p>
                         </div>
                     </div>
@@ -267,6 +309,14 @@
             $(this).tab('show');
         });
         $('#myTab li:nth-child(4) a').on('click', function(e) {
+            e.preventDefault();
+            $(this).tab('show');
+        });
+        $('#myTab li:nth-child(5) a').on('click', function(e) {
+            e.preventDefault();
+            $(this).tab('show');
+        });
+        $('#myTab li:nth-child(6) a').on('click', function(e) {
             e.preventDefault();
             $(this).tab('show');
         });
